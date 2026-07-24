@@ -1,7 +1,15 @@
 aid: billtrim
 name: BillTrim
-description: BillTrim is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BillTrim is a consumer bill-management and negotiation service that helps
+  households lower, monitor, and pay their recurring bills. Its team negotiates
+  with providers on the customer's behalf (up to twice a year), watches for
+  price increases before autopay processes, and can pay bills automatically from
+  a connected bank account. BillTrim advertises support for 20,000+ service
+  providers across internet, cable, phone, insurance, and other recurring
+  household expenses. Backed by 500 Global, it operates as a consumer-facing web
+  and mobile application; no public developer API or developer portal is
+  currently published.
 url: https://raw.githubusercontent.com/api-evangelist/billtrim/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.billtrim.com/images/webclip.png
 tags:
 - Company
+- Bill Negotiation
+- Bill Management
+- Personal Finance
+- Fintech
+- Consumer
+- Bill Pay
+- Savings
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/billtrim-domain-security.yml
 - type: Website
   url: https://billtrim.com
+- type: SignUp
+  url: https://app.billtrim.com/a3register
+- type: Login
+  url: https://app.billtrim.com/a4login
+- type: Support
+  url: mailto:support@billtrim.com
+- type: PrivacyPolicy
+  url: https://www.billtrim.com/privacy-pledge.html
+- type: TermsOfService
+  url: https://www.billtrim.com/terms.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
